@@ -2,25 +2,8 @@
   "android": {
     "package": "com.omar.einbtest",
     "minVersion": "1.0.0",
-    "latestVersion": "1.0.0",
+    "latestVersion": "1.0.6",
     "storeUrl": "https://play.google.com/store/apps/details?id=com.omar.einbtest"
   },
-  "policyVersion": 2,
-  "message": {
-    "de": "Eine neue Version ist verfügbar — aktualisiere die App, um die neuesten Fragen und Verbesserungen zu erhalten.",
-    "en": "A new version is available — update the app to get the latest questions and improvements.",
-    "ar": "إصدار جديد متاح — قم بتحديث التطبيق للحصول على أحدث الأسئلة والتحسينات.",
-    "tr": "Yeni bir sürüm mevcut — en son sorular ve iyileştirmeler için uygulamayı güncelle.",
-    "ru": "Доступна новая версия — обновите приложение, чтобы получить последние вопросы и улучшения.",
-    "uk": "Доступна нова версія — оновіть застосунок, щоб отримати найновіші питання та покращення.",
-    "fa": "نسخه جدیدی در دسترس است — برنامه را به‌روزرسانی کنید تا جدیدترین سؤالات و بهبودها را دریافت کنید.",
-    "ro": "Este disponibilă o versiune nouă — actualizează aplicația pentru a primi cele mai noi întrebări și îmbunătățiri.",
-    "pl": "Dostępna jest nowa wersja — zaktualizuj aplikację, aby uzyskać najnowsze pytania i ulepszenia.",
-    "sq": "Një version i ri është i disponueshëm — përditëso aplikacionin për pyetjet dhe përmirësimet më të fundit.",
-    "sr": "Доступна је нова верзија — ажурирајте апликацију да бисте добили најновија питања и побољшања.",
-    "it": "È disponibile una nuova versione — aggiorna l'app per ottenere le ultime domande e i miglioramenti.",
-    "bg": "Налична е нова версия — актуализирайте приложението, за да получите най-новите въпроси и подобрения.",
-    "el": "Διαθέσιμη νέα έκδοση — ενημέρωσε την εφαρμογή για να αποκτήσεις τις πιο πρόσφατες ερωτήσεις και βελτιώσεις.",
-    "ur": "ایک نیا ورژن دستیاب ہے — جدید ترین سوالات اور بہتریوں کے لیے ایپ کو اپ ڈیٹ کریں۔"
-  }
+  "policyVersion": 3
 }
