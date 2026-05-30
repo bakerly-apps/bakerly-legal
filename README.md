@@ -1,25 +1,17 @@
-# bakerly-legal
+# Bakerly Apps
 
-Public legal documents for [Bakerly Apps](https://github.com/bakerly-apps) mobile apps.
+Public site for [Bakerly Apps](https://github.com/bakerly-apps): landing pages
+and privacy policies for our mobile apps.
 
-## Upload to GitHub
+🌐 **Live site:** https://bakerly-apps.github.io/bakerly-legal/
 
-Upload these files to the root of [bakerly-legal](https://github.com/bakerly-apps/bakerly-legal):
+## Apps
 
-- `index.html`
-- `einbuergerungstest.html`
+| App | Page | Privacy Policy |
+|-----|------|----------------|
+| Einbürgerungstest | [Open](https://bakerly-apps.github.io/bakerly-legal/einbuergerungstest/) | [Read](https://bakerly-apps.github.io/bakerly-legal/einbuergerungstest/privacy.html) |
 
-## Enable GitHub Pages
+## Contact
 
-1. Open the repo on GitHub → **Settings** → **Pages**
-2. **Build and deployment** → Source: **Deploy from a branch**
-3. Branch: **main** · Folder: **/ (root)**
-4. Save. After 1–2 minutes the site is live.
-
-## URLs (for Play Console & in-app links)
-
-| App | Privacy policy URL |
-|-----|-------------------|
-| Einbürgerungstest | https://bakerly-apps.github.io/bakerly-legal/einbuergerungstest.html |
-
-Index: https://bakerly-apps.github.io/bakerly-legal/
+Questions, privacy requests, or app feedback:
+[support.bakerly.apps@gmail.com](mailto:support.bakerly.apps@gmail.com)
