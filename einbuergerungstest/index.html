@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Einbürgerungstest — Get the app</title>
+  <meta name="description" content="Practice for the German citizenship test (Einbürgerungstest) on your phone.">
+  <meta property="og:title" content="Einbürgerungstest — Practice app">
+  <meta property="og:description" content="Practice for the German citizenship test (Einbürgerungstest) on your phone.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bakerly-apps.github.io/bakerly-legal/einbuergerungstest/">
+  <style>
+    :root { color-scheme: light dark; --accent: #2563eb; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.55;
+      max-width: 32rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 3rem;
+      color: #111827;
+      background: #fff;
+      text-align: center;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e5e7eb; background: #0b1220; }
+      a { color: #60a5fa; }
+      .muted { color: #94a3b8; }
+      .btn { background: #1e3a8a; color: #fff; }
+    }
+    h1 { font-size: 1.6rem; margin: 1.25rem 0 0.25rem; }
+    p { margin: 0.5rem 0; }
+    .muted { color: #6b7280; font-size: 0.95rem; }
+    .stores {
+      display: flex; flex-direction: column; gap: 0.6rem;
+      margin: 1.5rem auto 0; max-width: 22rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.85rem 1.25rem;
+      border-radius: 999px;
+      background: var(--accent); color: #fff;
+      text-decoration: none; font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    }
+    .btn.secondary {
+      background: transparent;
+      color: var(--accent);
+      border: 1.5px solid var(--accent);
+      box-shadow: none;
+    }
+    .icon {
+      font-size: 3rem; line-height: 1; margin-top: 1rem;
+    }
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.85rem; color: #6b7280;
+    }
+    @media (prefers-color-scheme: dark) {
+      footer { color: #94a3b8; }
+    }
+  </style>
+</head>
+<body>
+  <div class="icon">🇩🇪</div>
+  <h1>Einbürgerungstest</h1>
+  <p class="muted">Practice for the German citizenship test on your phone.</p>
+
+  <div class="stores">
+    <a id="play-link" class="btn"
+       href="https://play.google.com/store/apps/details?id=com.omar.einbtest">
+      Get it on Google Play
+    </a>
+    <!-- iOS button is hidden until the App Store listing exists. Once it
+         does, swap the href to the App Store URL and remove the `hidden`
+         attribute. Auto-redirect for iPhone visitors will activate too. -->
+    <a id="ios-link" class="btn secondary" hidden href="#">
+      Download on the App Store
+    </a>
+  </div>
+
+  <footer>
+    <p>
+      <a href="../einbuergerungstest.html">Privacy Policy</a> ·
+      <a href="mailto:support.bakerly.apps@gmail.com">Contact</a>
+    </p>
+  </footer>
+
+  <script>
+    // Smart redirect: send mobile visitors directly to the right store
+    // without the extra tap. The buttons above remain visible as a fallback
+    // (for users with redirect-blocking browsers, or who landed here from
+    // the store itself).
+    //
+    // Cross-platform sharing strategy:
+    //   - The app shares THIS URL (single link, both platforms).
+    //   - Android → redirect to Google Play.
+    //   - iOS     → redirect to App Store (once the listing is live).
+    //   - Other   → stay on this page, user picks a store manually.
+    //
+    // To enable iOS once the app ships:
+    //   1. Set IOS_STORE_URL below to the real App Store URL.
+    //   2. Remove the `hidden` attribute from #ios-link in the markup.
+    (function () {
+      var PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.omar.einbtest";
+      var IOS_STORE_URL  = "";  // Fill in once iOS app is published.
+
+      var ua = navigator.userAgent || "";
+      var isAndroid = /android/i.test(ua);
+      var isIOS     = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+
+      if (isAndroid) {
+        window.location.replace(PLAY_STORE_URL);
+        return;
+      }
+      if (isIOS && IOS_STORE_URL) {
+        window.location.replace(IOS_STORE_URL);
+        return;
+      }
+      if (IOS_STORE_URL) {
+        var ios = document.getElementById("ios-link");
+        if (ios) {
+          ios.href = IOS_STORE_URL;
+          ios.hidden = false;
+        }
+      }
+    })();
+  </script>
+</body>
+</html>
