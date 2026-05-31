@@ -2,8 +2,8 @@
   "android": {
     "package": "com.omar.einbtest",
     "minVersion": "1.0.0",
-    "latestVersion": "1.0.11",
+    "latestVersion": "1.0.12",
     "storeUrl": "https://play.google.com/store/apps/details?id=com.omar.einbtest"
   },
-  "policyVersion": 3
+  "policyVersion": 4
 }

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — Einbürgerungstest | Bakerly Apps</title>
   <meta name="description" content="Privacy policy for the Einbürgerungstest practice app by Bakerly Apps.">
-  <!-- policy-version: 3 — bumped 2026-05-28 to add official BAMF data sources -->
+  <!-- policy-version: 4 — bumped 2026-05-31 to disclose interstitial & app-open ads, local notifications, sharing, text-to-speech, in-app review, and version check -->
   <style>
     :root { color-scheme: light dark; }
     body {
@@ -36,7 +36,7 @@
   <p class="muted">
     App: <strong>Einbürgerungstest</strong> ·
     Publisher: <strong>Bakerly Apps</strong> ·
-    Last updated: <time datetime="2026-05-28">28 May 2026</time> · Version 3
+    Last updated: <time datetime="2026-05-31">31 May 2026</time> · Version 4
   </p>
 
   <p>
@@ -75,13 +75,15 @@
     <li>We do not sell your personal data.</li>
     <li>Your learning progress is stored <strong>only on your device</strong>.</li>
     <li>The app is free and is financed by ads served through <strong>Google AdMob</strong>. AdMob collects limited data (see “Advertising” below) to display and measure ads.</li>
+    <li>Optional study reminders run as <strong>local notifications</strong> on your device only — they are not push messages and no server is involved.</li>
   </ul>
 
   <h2>Information stored on your device</h2>
   <p>
     The app stores settings and study data locally on your phone or tablet using the app’s
     private storage (for example: app language, federal state selection, quiz answers,
-    bookmarks, spaced-repetition schedules, and practice-test history).
+    bookmarks, spaced-repetition schedules, practice-test history, optional exam date for
+    reminders, and notification preferences).
   </p>
   <p>
     We do not operate servers that receive this study data. It is not uploaded to Bakerly Apps.
@@ -110,13 +112,18 @@
 
   <h2>Advertising (Google AdMob)</h2>
   <p>
-    The app uses <strong>Google AdMob</strong> to display banner and rectangular ads inside the app.
-    AdMob is provided by Google Ireland Limited (Gordon House, Barrow Street, Dublin 4, Ireland).
-    Google acts as an independent data controller for the advertising data it processes.
+    The app uses <strong>Google AdMob</strong> to display ads inside the app. AdMob is provided
+    by Google Ireland Limited (Gordon House, Barrow Street, Dublin 4, Ireland). Google acts as
+    an independent data controller for the advertising data it processes.
   </p>
-  <p>
-    When ads are shown, Google may automatically collect:
-  </p>
+  <p>The app shows the following AdMob ad formats:</p>
+  <ul>
+    <li><strong>Banner ads</strong> — small adaptive banners displayed at the bottom of certain screens.</li>
+    <li><strong>Interstitial ads</strong> — full-screen ads shown at natural break points (for example, after finishing a quiz or leaving a study mode), rate-limited so they do not appear too often.</li>
+    <li><strong>App-open ads</strong> — full-screen ads that may appear when you return to the app, shown at most once per day.</li>
+  </ul>
+  <p>The app does <strong>not</strong> use rewarded ads, native ads, or video ads outside the formats listed above.</p>
+  <p>When ads are shown, Google may automatically collect:</p>
   <ul>
     <li><strong>Advertising ID</strong> (a resettable identifier assigned by Android)</li>
     <li><strong>IP address</strong></li>
@@ -155,11 +162,81 @@
     After this, AdMob will no longer use a stable advertising ID to profile you.
   </p>
 
+  <h2>Notifications (study reminders)</h2>
+  <p>
+    The app can show <strong>local notifications</strong> on your device to help you keep up
+    your study routine. These are scheduled by Android on your device — they are not push
+    messages, no server is involved, and no data leaves your device for this feature.
+  </p>
+  <p>Notifications include, depending on your settings and whether you have entered an exam date:</p>
+  <ul>
+    <li>An optional <strong>daily study reminder</strong> at a fixed time.</li>
+    <li><strong>Exam countdown reminders</strong> at fixed intervals before an exam date you have entered (for example, two weeks, one week, three days, and one day before).</li>
+    <li>A <strong>re-engagement reminder</strong> if you have not opened the app for a few days and have not set an exam date.</li>
+    <li>A one-time <strong>post-exam check-in</strong> the day after your exam date, which may invite you to leave a Google Play review.</li>
+  </ul>
+  <p>
+    You can enable or disable notifications at any time in the app’s settings, or in Android’s
+    system notification settings for the app. On Android&nbsp;13 and newer you will be asked for
+    notification permission the first time the app tries to schedule one. The app also requests
+    the <em>exact alarm</em> permission so reminders fire reliably even when the device is in
+    battery-saver or Doze mode.
+  </p>
+
+  <h2>Sharing (Android share sheet)</h2>
+  <p>
+    The app includes a “Share” option that lets you share a question or a link to the app using
+    Android’s system share sheet. When you tap Share, the app hands the chosen text to Android
+    and you decide which app to send it to (for example a messaging app). Bakerly Apps does not
+    receive a copy of what you share or which app you choose.
+  </p>
+
+  <h2>Read-aloud (text-to-speech)</h2>
+  <p>
+    The app can read questions aloud using your device’s built-in text-to-speech engine
+    (provided by Android or the speech engine you have installed). The text being read is
+    processed on your device by that engine. Bakerly Apps does not record audio and does not
+    send the spoken text to its own servers. If your device’s speech engine is provided by a
+    third party (for example Google), that engine’s own privacy policy applies to its processing.
+  </p>
+
+  <h2>In-app review (Google Play)</h2>
+  <p>
+    After an exam date you have entered, the app may show the standard Google Play in-app review
+    sheet so you can rate the app without leaving it. The review sheet is provided and handled
+    by Google Play. Any rating or review you submit is sent directly to Google and is governed
+    by Google’s privacy policy.
+  </p>
+
+  <h2>Version and policy update check</h2>
+  <p>
+    When the app starts, it makes a single HTTPS request to a static file on
+    <em>bakerly-apps.github.io</em> to check the current app version and the current privacy
+    policy version. This is used so the app can let you know that an update or an updated
+    privacy policy is available. The request is non-blocking — the app continues to work if
+    the request fails. As with any HTTPS request, the host (GitHub Pages) automatically receives
+    standard request metadata such as your IP address. Bakerly Apps does not log this request
+    and does not associate it with you.
+  </p>
+
+  <h2>Android permissions used</h2>
+  <ul>
+    <li><strong>Internet</strong> (<code>INTERNET</code>) — to load ads and to perform the version check above.</li>
+    <li><strong>Advertising ID</strong> (<code>com.google.android.gms.permission.AD_ID</code>) — used by AdMob, subject to your consent and Android settings.</li>
+    <li><strong>Post notifications</strong> (<code>POST_NOTIFICATIONS</code>, Android&nbsp;13+) — only required to show the optional study reminders described above.</li>
+    <li><strong>Schedule exact alarms</strong> (<code>SCHEDULE_EXACT_ALARM</code> / <code>USE_EXACT_ALARM</code>) — used so study reminders fire at the scheduled time even during battery-saver or Doze.</li>
+  </ul>
+  <p>
+    The app does <strong>not</strong> request camera, microphone, contacts, precise location,
+    files outside its own storage, or any other sensitive permission.
+  </p>
+
   <h2>Legal basis under the GDPR</h2>
   <ul>
     <li><strong>Provision of the app and offline study progress (Art. 6(1)(b) GDPR)</strong> — necessary to provide the service you requested.</li>
     <li><strong>Non-personalized ads and security/fraud prevention by Google (Art. 6(1)(f) GDPR)</strong> — Google’s and our legitimate interest in financing and protecting a free app.</li>
     <li><strong>Personalized advertising (Art. 6(1)(a) GDPR)</strong> — only with your explicit consent through the Google consent dialog.</li>
+    <li><strong>Study reminder notifications (Art. 6(1)(a) GDPR)</strong> — based on your consent, expressed by enabling notifications and granting the Android notification permission.</li>
   </ul>
 
   <h2>Children</h2>
@@ -178,8 +255,8 @@
     Bakerly Apps, contact us at the email below.
   </p>
   <p>
-    For data processed by Google through AdMob, please contact Google directly using the links in
-    the “Advertising” section above.
+    For data processed by Google through AdMob, Google Play in-app review, or a Google text-to-speech
+    engine, please contact Google directly using the links in the “Advertising” section above.
   </p>
 
   <h2>Changes to this policy</h2>
