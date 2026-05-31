@@ -1,9 +1,14 @@
 {
   "android": {
     "package": "com.omar.einbtest",
-    "minVersion": "1.0.0",
-    "latestVersion": "1.0.12",
+    "minVersion": "1.0.10",
+    "latestVersion": "1.0.13",
     "storeUrl": "https://play.google.com/store/apps/details?id=com.omar.einbtest"
   },
-  "policyVersion": 4
+  "policyVersion": 4,
+  "tempo": {
+    "pulse": 30,
+    "pulseEarly": 60,
+    "earlyDays": 2
+  }
 }

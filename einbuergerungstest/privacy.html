@@ -178,9 +178,9 @@
   <p>
     You can enable or disable notifications at any time in the app’s settings, or in Android’s
     system notification settings for the app. On Android&nbsp;13 and newer you will be asked for
-    notification permission the first time the app tries to schedule one. The app also requests
-    the <em>exact alarm</em> permission so reminders fire reliably even when the device is in
-    battery-saver or Doze mode.
+    notification permission the first time the app tries to schedule one. Reminders are scheduled
+    as inexact alarms, so on devices in battery-saver or Doze mode they may fire a few minutes
+    later than the scheduled time.
   </p>
 
   <h2>Sharing (Android share sheet)</h2>
@@ -224,7 +224,6 @@
     <li><strong>Internet</strong> (<code>INTERNET</code>) — to load ads and to perform the version check above.</li>
     <li><strong>Advertising ID</strong> (<code>com.google.android.gms.permission.AD_ID</code>) — used by AdMob, subject to your consent and Android settings.</li>
     <li><strong>Post notifications</strong> (<code>POST_NOTIFICATIONS</code>, Android&nbsp;13+) — only required to show the optional study reminders described above.</li>
-    <li><strong>Schedule exact alarms</strong> (<code>SCHEDULE_EXACT_ALARM</code> / <code>USE_EXACT_ALARM</code>) — used so study reminders fire at the scheduled time even during battery-saver or Doze.</li>
   </ul>
   <p>
     The app does <strong>not</strong> request camera, microphone, contacts, precise location,
