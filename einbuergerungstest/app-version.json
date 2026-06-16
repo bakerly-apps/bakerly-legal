@@ -7,8 +7,8 @@
   },
   "policyVersion": 4,
   "tempo": {
-    "pulse": 600,
-    "pulseEarly": 1200,
+    "pulse": 180,
+    "pulseEarly": 300,
     "earlyDays": 2
   }
 }
